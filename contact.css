@@ -1,0 +1,235 @@
+:root {
+    --primary-color: #a855f7;
+    --primary-color-dark: #9333ea;
+    --orange-color: #ca8a04;
+    --extra-light: #faf5ff;
+    --primary-green-color: #4EA685;
+    --secondary-green-color: #57B894;
+    --gray: #efefef;
+    --gray-2: #757575;
+    /* SOCIALS COLORS */
+    --facebook-color: #4267B2;
+    --google-color: #DB4437;
+    --twitter-color: #1DA1F2;
+    --insta-color: #E1306C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: var(--primary-color-dark);
+    color: white;
+    padding-bottom: 20px;
+}
+
+.navbar {
+    background-color: var(--primary-color);
+    padding: 10px 0;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: var(--secondary-green-color);
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
+
+.contact-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    background-color: #333;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-btn i {
+    font-size: 1.4rem;
+}
+
+.social-btn:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+/* Specific Styles for Different Social Links */
+.facebook {
+    background-color: var(--facebook-color);
+}
+
+.twitter {
+    background-color: #242829;
+}
+
+.instagram {
+    background-color: var(--insta-color);
+}
+
+.email {
+    background-color: #f63a3a;
+}
+
+/* Social Button Hover Effects */
+.facebook:hover {
+    background-color: #2d4373;
+}
+
+.twitter:hover {
+    background-color: #2d3031;
+}
+
+.instagram:hover {
+    background-color: #c13584;
+}
+
+.email:hover {
+    background-color: #d35858;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For devices with a max width of 1024px (tablets in landscape mode) */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .navbar ul li a {
+        font-size: 1.1rem;
+    }
+
+    .contact-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-section p {
+        font-size: 1.1rem;
+    }
+
+    .social-btn {
+        padding: 12px 25px;
+        font-size: 1.1rem;
+    }
+}
+
+/* For devices with a max width of 768px (tablets and small laptops) */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .social-btn {
+        width: 80%;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+/* For devices with a max width of 480px (mobile phones) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+        margin: 15px 0;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .navbar ul li a {
+        font-size: 1rem;
+    }
+
+    .contact-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-section p {
+        font-size: 1rem;
+    }
+
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-btn {
+        width: 90%;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        <h1>Login</h1>
+    </header>
+
+    <section class="login-section">
+        <h2>Welcome Back!</h2>
+        <form class="login-form" action="#" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+
+        <p class="signup-text">Don't have an account? Sign up with:</p>
+
+        <div class="social-signup">
+            <a href="#" class="signup-btn google">
+                <i class="fab fa-google"></i> Sign Up with Google
+            </a>
+            <a href="#" class="signup-btn facebook">
+                <i class="fab fa-facebook-f"></i> Sign Up with Facebook
+            </a>
+        </div>
+    </section>
+</body>
+
+</html>
